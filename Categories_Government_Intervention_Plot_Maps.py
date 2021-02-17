@@ -128,7 +128,7 @@ class Window(QDialog):
                         txt.set_text(v)
 
         replace_legend_items(ax.get_legend(), monthdic)
-        ax.set_title('Month started' + self.cb.currentText())
+        ax.set_title('Month Started ' + self.cb.currentText())
         ax.set_xticks([])
         ax.set_yticks([])
         self.canvas.draw()     
