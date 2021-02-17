@@ -82,7 +82,6 @@ df = pd.DataFrame([start_dates[i:i+8] for i in range(0,len(start_dates),8)], col
 #Plots schools_closed start dates for each country 
 class Window(QDialog): 
        
-    # constructor 
     def __init__(self, parent=None): 
         super(Window, self).__init__(parent) 
     
@@ -124,7 +123,7 @@ class Window(QDialog):
         ax.set_xlim(np.datetime64('2020-01-19'),np.datetime64('2020-03-27'))
         ax.set_ylim(-1,len(yp))
         ax.grid(True, alpha=0.2, color='red')
-        ax.set_title(self.cb.currentText()) 
+        ax.set_title('Date Started ' + self.cb.currentText()) 
 
         self.canvas.draw() 
    
